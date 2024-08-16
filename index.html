@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafío Encriptador de Texto</title>
+    <title>Encriptador/Desencriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>ENCRIPTADOR DE TEXTO</h1>
-    <h2>Desafío</h2>
-    <script src = "app.js" > </script>
-
+    <div class="container">
+        <h1>Encriptador/Desencriptador de Texto</h1>
+        
+        <textarea id="inputText" placeholder="Escribe el texto aquí..." rows="5"></textarea>
+        
+        <div class="controls">
+            <label>
+                <input type="radio" name="action" value="encrypt" checked> Encriptar
+            </label>
+            <label>
+                <input type="radio" name="action" value="decrypt"> Desencriptar
+            </label>
+        </div>
+        
+        <button id="processButton">Procesar</button>
+        <button id="copyButton">Copiar al portapapeles</button>
+        
+        <textarea id="outputText" placeholder="Resultado aparecerá aquí..." rows="5" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
